@@ -7,6 +7,11 @@ ActiveAdmin.register_page "Dashboard" do
       span class: "blank_slate" do
         span I18n.t("active_admin.dashboard_welcome.welcome")
         small I18n.t("active_admin.dashboard_welcome.call_to_action")
+        hr
+        span do
+          text_node("Source code is located")
+          a "here.", href: "https://github.com/Zhomart/ActiveAdminMongoidIntExample", target: '_blank'
+        end
       end
     end
 
